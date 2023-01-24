@@ -1,12 +1,23 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  /* 레이아웃 */
   display: flex;
-  background: black;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
   width: 100%;
+  top: 0px;
+  z-index: 5;
+
+  /* 색상 */
+  background: goldenrod;
   color: white;
+  border-bottom: 1px solid;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.2);
 `;
 
 export const Text = styled.text`
-  color: white;
+  color: black;
 `;
