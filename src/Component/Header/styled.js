@@ -7,7 +7,9 @@ export const Wrapper = styled.div`
   align-items: center; // 수직(위아래)정렬에서 가운데 정렬, 반대로 justify-content: center; 는 수평정렬
   height: 60px;
   width: 100%;
+  padding-top: 10px;
   padding-left: 20px; //왼쪽 여백주기
+  z-index: 3;
 
   /* 색상 */
   background: ${(props) => {
@@ -20,18 +22,20 @@ export const Wrapper = styled.div`
     return bg;
   }};
   color: black;
-  border-bottom: 1px solid;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.2);
 `;
 
 export const Title = styled.text`
   cursor: pointer;
   color: black;
-  padding-left: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 100px;
   padding-right: 1000px;
 `;
 
 export const Text = styled.text`
   color: black;
-  padding-left: 20px;
+  font-size: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
 `;
