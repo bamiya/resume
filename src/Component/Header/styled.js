@@ -34,6 +34,7 @@ export const Title = styled.text`
 `;
 
 export const Text = styled.text`
+  cursor: pointer;
   color: black;
   font-size: 20px;
   padding-left: 25px;
