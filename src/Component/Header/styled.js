@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
   color: black;
 `;
 
-export const Title = styled.text`
+export const Title = styled.div`
   cursor: pointer;
   color: black;
   font-size: 30px;
@@ -33,7 +33,7 @@ export const Title = styled.text`
   padding-right: 1000px;
 `;
 
-export const Text = styled.text`
+export const Text = styled.div`
   cursor: pointer;
   color: black;
   font-size: 20px;

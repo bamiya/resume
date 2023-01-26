@@ -12,7 +12,7 @@ export const FirstWrapper = styled.div`
   background: gray;
 `;
 
-export const Intro = styled.text`
+export const Intro = styled.div`
   color: white;
 `;
 
@@ -38,13 +38,17 @@ export const Image = styled.img`
   width: 30px;
   height: 30px;
   margin: 15px;
-  float: left;
   background-color: transparent;
 `;
 
-export const Text = styled.text`
+export const Text = styled.div`
   color: black;
   font-size: 25px;
+  float: left;
+`;
+
+export const TextBox = styled.div`
+  text-align: center;
 `;
 
 export const ThirdWrapper = styled.div`
