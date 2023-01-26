@@ -10,12 +10,28 @@ export const Wrapper = styled.div`
   padding-left: 20px; //왼쪽 여백주기
 
   /* 색상 */
-  background: transparent;
+  background: ${(props) => {
+    let bg;
+    if (props.scroll) {
+      bg = "white";
+    } else {
+      bg = "transparent";
+    }
+    return bg;
+  }};
   color: black;
   border-bottom: 1px solid;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.2);
 `;
 
+export const Title = styled.text`
+  cursor: pointer;
+  color: black;
+  padding-left: 20px;
+  padding-right: 1000px;
+`;
+
 export const Text = styled.text`
   color: black;
+  padding-left: 20px;
 `;
