@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
   height: 60px;
   width: 100%;
   padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 20px; //왼쪽 여백주기
   z-index: 3;
 

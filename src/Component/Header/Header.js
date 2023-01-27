@@ -6,7 +6,7 @@ const Header = () => {
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
   }; //window.scrollY === window.pageYOffset 둘은 같고, 0일때 스크롤 맨 위 초기값,
-  //window.scrollY || document.documentElement.scrollTop 는 브라우저별 호환성때문에 사용
+  //window.scrollY || document.documentElement.scrollTop 는 브라우저별 호환성때문에 둘중 하나만 참이어도 참이게끔 사용 (크로스브라우징)
 
   useEffect(() => {
     window.addEventListener("scroll", updateScroll);
