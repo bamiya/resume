@@ -22,6 +22,15 @@ export const Wrapper = styled.div`
     }
     return bg;
   }};
+  box-shadow: ${(props) => {
+    let shadow;
+    if (props.scroll) {
+      shadow = "0 0 10px 0";
+    } else {
+      shadow = "0";
+    }
+    return shadow;
+  }};
   color: black;
 `;
 

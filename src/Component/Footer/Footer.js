@@ -6,9 +6,6 @@ const Footer = () => {
       <Styled.IconBox>
         <Styled.Icon src={`${process.env.PUBLIC_URL}/assets/github.png`} alt="github" />
       </Styled.IconBox>
-      <Styled.IconBox>
-        <Styled.Icon src={`${process.env.PUBLIC_URL}/assets/velog.png`} alt="velog" />
-      </Styled.IconBox>
     </Styled.Wrapper>
   );
 };
