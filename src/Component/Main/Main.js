@@ -60,8 +60,19 @@ const Main = () => {
         </Styled.InfoBox>
       </Styled.SecondWrapper>
       <Styled.ThirdWrapper>
+        <Styled.CTitleText>Channel</Styled.CTitleText>
+        <Styled.WrapperChannel>
+          <Styled.ChannelBox>
+            <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/githublogo.png`} />
+          </Styled.ChannelBox>
+          <Styled.ChannelBox>
+            <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/veloglogo.png`} />
+          </Styled.ChannelBox>
+        </Styled.WrapperChannel>
+      </Styled.ThirdWrapper>
+      <Styled.FourthWrapper>
         <Styled.TitleText>Skills</Styled.TitleText>
-        <Styled.WrapperBox>
+        <Styled.WrapperSkills>
           <Styled.SkillBox>
             <Styled.SkillWrapperBox>
               <Styled.SkillName>Backend</Styled.SkillName>
@@ -96,11 +107,11 @@ const Main = () => {
               <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/certi.png`} />
             </Styled.SkillWrapperBox>
           </Styled.SkillBox>
-        </Styled.WrapperBox>
-      </Styled.ThirdWrapper>
-      <Styled.FourthWrapper>
-        <Styled.TitleText>Projects</Styled.TitleText>
+        </Styled.WrapperSkills>
       </Styled.FourthWrapper>
+      <Styled.FifthWrapper>
+        <Styled.TitleText>Projects</Styled.TitleText>
+      </Styled.FifthWrapper>
     </>
   );
 };

@@ -73,12 +73,46 @@ export const ThirdWrapper = styled.div`
   display: grid;
   align-items: center;
   justify-content: center;
+  height: 600px;
+  width: 100%;
+  background-color: rgb(39 39 39);
+`;
+
+export const CTitleText = styled.div`
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center; //텍스트 정렬할때 사용
+  margin: 25px;
+`;
+export const WrapperChannel = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 30px;
+`;
+
+export const ChannelBox = styled.div`
+  width: auto;
+  height: auto;
+  background: white;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 10px 0;
+  &:hover {
+    transform: translateY(15px);
+  } //hover는 마우스를 올렸을때 반응하게하는 css 요소
+`;
+
+export const FourthWrapper = styled.div`
+  display: grid;
+  align-items: center;
+  justify-content: center;
   height: 1400px;
   width: 100%;
   background-color: rgb(153 200 255);
 `;
 
-export const WrapperBox = styled.div`
+export const WrapperSkills = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -122,7 +156,7 @@ export const LogoImage = styled.img`
   width: 100%;
 `;
 
-export const FourthWrapper = styled.div`
+export const FifthWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
