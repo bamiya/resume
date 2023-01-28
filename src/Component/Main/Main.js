@@ -65,7 +65,7 @@ const Main = forwardRef((props, ref) => {
           </Styled.TextBox>
         </Styled.InfoBox>
       </Styled.SecondWrapper>
-      <Styled.ThirdWrapper ref={ScrollToFocus}>
+      <Styled.ThirdWrapper>
         <Styled.CTitleText>Channel</Styled.CTitleText>
         <Styled.WrapperChannel>
           <Styled.ChannelBox>
@@ -108,7 +108,7 @@ const Main = forwardRef((props, ref) => {
           </Styled.ChannelBox>
         </Styled.WrapperChannel>
       </Styled.ThirdWrapper>
-      <Styled.FourthWrapper ref={ScrollToFocus}>
+      <Styled.FourthWrapper>
         <Styled.TitleText>Skills</Styled.TitleText>
         <Styled.WrapperSkills>
           <Styled.SkillBox>
@@ -165,7 +165,7 @@ const Main = forwardRef((props, ref) => {
           </Styled.SkillBox>
         </Styled.WrapperSkills>
       </Styled.FourthWrapper>
-      <Styled.FifthWrapper ref={ScrollToFocus}>
+      <Styled.FifthWrapper>
         <Styled.TitleText>Projects</Styled.TitleText>
       </Styled.FifthWrapper>
     </>
