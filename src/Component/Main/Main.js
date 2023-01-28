@@ -136,6 +136,75 @@ const Main = () => {
       </Styled.FourthWrapper>
       <Styled.FifthWrapper ref={ScrollToFocus}>
         <Styled.TitleText>Projects</Styled.TitleText>
+        <Styled.WrapperProject>
+          <Styled.ProjectBox>
+            <Styled.PTitle>
+              포폴<Styled.PdateText>2023.01 / 개인 프로젝트(1인)</Styled.PdateText>
+            </Styled.PTitle>
+            <Styled.WrapperPInside>
+              <Styled.ProjectText>하하하</Styled.ProjectText>
+            </Styled.WrapperPInside>
+          </Styled.ProjectBox>
+          <Styled.ProjectBox>
+            <Styled.PTitle>
+              Travel-Planner<Styled.PdateText>2022.10 / 팀 프로젝트(5인)</Styled.PdateText>
+            </Styled.PTitle>
+            <Styled.WrapperPInside>
+              <Styled.ProjectImg src={`${process.env.PUBLIC_URL}/assets/tp1.png`} />
+              <Styled.ProjectText>
+                GitHub :
+                <Styled.LinkText2 onClick={() => OpenLink("https://github.com/Bamiya/travel-planner/")}>
+                  https://github.com/Bamiya/travel-planner/
+                </Styled.LinkText2>
+                <br />
+                Frontend : JS, React <br />
+                Backend : Java, Spring Boot <br />
+                Database : MariaDB
+              </Styled.ProjectText>
+            </Styled.WrapperPInside>
+          </Styled.ProjectBox>
+          <Styled.ProjectBox>
+            <Styled.PTitle>
+              웹 크롤링<Styled.PdateText>2022.07 / 개인 프로젝트(1인)</Styled.PdateText>
+            </Styled.PTitle>
+            <Styled.WrapperPInside>
+              <Styled.ProjectImg src={`${process.env.PUBLIC_URL}/assets/webc1.png`} />
+              <Styled.ProjectText>
+                GitHub : https://github.com/Bamiya/movie_crawling/
+                <br />
+                Skills : Python
+              </Styled.ProjectText>
+            </Styled.WrapperPInside>
+          </Styled.ProjectBox>
+          <Styled.ProjectBox>
+            <Styled.PTitle>
+              JSP 게시판<Styled.PdateText>2022.07 / 팀 프로젝트(4인)</Styled.PdateText>
+            </Styled.PTitle>
+            <Styled.WrapperPInside>
+              <Styled.ProjectImg src={`${process.env.PUBLIC_URL}/assets/jsp1.png`} />
+              <Styled.ProjectText>
+                GitHub : https://github.com/Bamiya/jsp_board/
+                <br />
+                Skills : Java JSP
+                <br />
+                Database : Oracle Database
+              </Styled.ProjectText>
+            </Styled.WrapperPInside>
+          </Styled.ProjectBox>
+          <Styled.ProjectBox>
+            <Styled.PTitle>
+              미니 포토샵<Styled.PdateText>2022.06 / 개인 프로젝트(1인)</Styled.PdateText>
+            </Styled.PTitle>
+            <Styled.WrapperPInside>
+              <Styled.ProjectImg src={`${process.env.PUBLIC_URL}/assets/photo.png`} />
+              <Styled.ProjectText>
+                GitHub : https://github.com/Bamiya/py_photoshop/
+                <br />
+                Skills : Python
+              </Styled.ProjectText>
+            </Styled.WrapperPInside>
+          </Styled.ProjectBox>
+        </Styled.WrapperProject>
       </Styled.FifthWrapper>
     </>
   );
