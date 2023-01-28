@@ -115,7 +115,8 @@ export const LinkText = styled.div`
 
 export const ChannelText = styled.div`
   font-size: 16px;
-  line-height: 25px;
+  font-weight: 10px;
+  line-height: 30px;
 `;
 
 export const FourthWrapper = styled.div`
