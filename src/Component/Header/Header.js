@@ -16,6 +16,7 @@ const Header = ({ onMenu1Click, onMenu2Click }) => {
       {/* 스크롤이 100px 초과일때 true, 100 이하면 false */}
       <Styled.Title>JD's Portfolio</Styled.Title>
       <Styled.Text onClick={onMenu1Click}>About me</Styled.Text>
+      <Styled.Text>Channel</Styled.Text>
       <Styled.Text onclick={onMenu2Click}>Skills</Styled.Text>
       <Styled.Text>Projects</Styled.Text>
     </Styled.Wrapper>
