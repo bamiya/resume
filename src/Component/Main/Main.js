@@ -1,6 +1,7 @@
+import { forwardRef } from "react";
 import * as Styled from "./styled";
 
-const Main = () => {
+const Main = forwardRef((props, ref) => {
   return (
     <>
       <Styled.FirstWrapper>
@@ -14,7 +15,7 @@ const Main = () => {
           새로운 스택을 배워 직접 적용해 보는것이 취미 입니다.
         </Styled.Intro>
       </Styled.FirstWrapper>
-      <Styled.SecondWrapper>
+      <Styled.SecondWrapper ref={ref}>
         <Styled.TitleText>ABOUT ME</Styled.TitleText>
         <Styled.InfoBox>
           <Styled.TextBox>
@@ -26,7 +27,9 @@ const Main = () => {
             </Styled.Text1>
           </Styled.TextBox>
           <Styled.TextBox>
-            <Styled.Image src={`${process.env.PUBLIC_URL}/assets/calendar.png`} />
+            <Styled.Image
+              src={`${process.env.PUBLIC_URL}/assets/calendar.png`}
+            />
             <Styled.Text1>
               생년월일
               <br />
@@ -63,10 +66,14 @@ const Main = () => {
         <Styled.CTitleText>Channel</Styled.CTitleText>
         <Styled.WrapperChannel>
           <Styled.ChannelBox>
-            <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/githublogo.png`} />
+            <Styled.LogoImage
+              src={`${process.env.PUBLIC_URL}/assets/githublogo.png`}
+            />
           </Styled.ChannelBox>
           <Styled.ChannelBox>
-            <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/veloglogo.png`} />
+            <Styled.LogoImage
+              src={`${process.env.PUBLIC_URL}/assets/veloglogo.png`}
+            />
           </Styled.ChannelBox>
         </Styled.WrapperChannel>
       </Styled.ThirdWrapper>
@@ -76,35 +83,53 @@ const Main = () => {
           <Styled.SkillBox>
             <Styled.SkillWrapperBox>
               <Styled.SkillName>Backend</Styled.SkillName>
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/javalogo.png`} />
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/springbootlogo.png`} />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/javalogo.png`}
+              />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/springbootlogo.png`}
+              />
             </Styled.SkillWrapperBox>
           </Styled.SkillBox>
           <Styled.SkillBox>
             <Styled.SkillWrapperBox>
               <Styled.SkillName>Frontend</Styled.SkillName>
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/hcjlogo.png`} />
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/reactlogo.png`} />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/hcjlogo.png`}
+              />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/reactlogo.png`}
+              />
             </Styled.SkillWrapperBox>
           </Styled.SkillBox>
           <Styled.SkillBox>
             <Styled.SkillWrapperBox>
               <Styled.SkillName>Version Control</Styled.SkillName>
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/gitlogo.png`} />
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/githublogo.png`} />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/gitlogo.png`}
+              />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/githublogo.png`}
+              />
             </Styled.SkillWrapperBox>
           </Styled.SkillBox>
           <Styled.SkillBox>
             <Styled.SkillWrapperBox>
               <Styled.SkillName>Communication</Styled.SkillName>
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/figmalogo.png`} />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/figmalogo.png`}
+              />
             </Styled.SkillWrapperBox>
           </Styled.SkillBox>
           <Styled.SkillBox>
             <Styled.SkillWrapperBox>
               <Styled.SkillName>Certificate</Styled.SkillName>
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/qnetlogo.png`} />
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/certi.png`} />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/qnetlogo.png`}
+              />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/certi.png`}
+              />
             </Styled.SkillWrapperBox>
           </Styled.SkillBox>
         </Styled.WrapperSkills>
@@ -114,5 +139,5 @@ const Main = () => {
       </Styled.FifthWrapper>
     </>
   );
-};
+});
 export default Main;

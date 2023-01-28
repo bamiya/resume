@@ -1,7 +1,7 @@
 import * as Styled from "./styled";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
-const Header = () => {
+const Header = ({ onMenu1Click, onMenu2Click }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
@@ -15,8 +15,8 @@ const Header = () => {
     <Styled.Wrapper scroll={scrollPosition > 100 ? true : false}>
       {/* 스크롤이 100px 초과일때 true, 100 이하면 false */}
       <Styled.Title>JD's Portfolio</Styled.Title>
-      <Styled.Text>About me</Styled.Text>
-      <Styled.Text>Skills</Styled.Text>
+      <Styled.Text onClick={onMenu1Click}>About me</Styled.Text>
+      <Styled.Text onclick={onMenu2Click}>Skills</Styled.Text>
       <Styled.Text>Projects</Styled.Text>
     </Styled.Wrapper>
   );
