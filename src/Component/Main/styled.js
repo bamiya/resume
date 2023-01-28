@@ -173,10 +173,70 @@ export const LogoImage = styled.img`
 `;
 
 export const FifthWrapper = styled.div`
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
-  height: 3000px;
+  height: auto;
   width: 100%;
   background-color: rgb(250, 238, 255);
+`;
+
+export const PTitle = styled.div`
+  font-size: 40px;
+  font-weight: bold;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+`;
+
+export const PdateText = styled.div`
+  color: black;
+  font-size: 17px;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 10px;
+`;
+
+export const WrapperProject = styled.div`
+  display: grid;
+`;
+
+export const WrapperPInside = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+`;
+
+export const ProjectBox = styled.div`
+  display: grid;
+  width: 1500px;
+  height: auto;
+  background: white;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 10px 0;
+`;
+
+export const ProjectImg = styled.img`
+  width: 500px;
+  height: 300px;
+  padding-left: 50px;
+  margin-top: 50px;
+`;
+
+export const ProjectText = styled.div`
+  display: inline;
+  font-size: 22px;
+  margin-top: 50px;
+`;
+
+export const LinkText2 = styled.div`
+  cursor: pointer;
+  display: inline;
+  font-size: 22px;
+  padding-bottom: 15px;
+  color: rgb(6 69 173);
+  &:hover {
+    text-decoration: underline rgb(6 69 173);
+  }
 `;
