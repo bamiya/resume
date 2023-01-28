@@ -1,11 +1,10 @@
-import { useRef } from "react";
+import { forwardRef } from "react";
 import * as Styled from "./styled";
 
-const Main = () => {
+const Main = forwardRef((props, ref) => {
   const OpenLink = (link) => {
     window.open(link, "_black", "noopener, noreferrer"); //noopener,noreferrer는 보안 취약점 개선
   };
-  const ScrollToFocus = useRef();
   return (
     <>
       <Styled.FirstWrapper>
@@ -19,7 +18,7 @@ const Main = () => {
           새로운 스택을 배워 직접 적용해 보는것이 취미 입니다.
         </Styled.Intro>
       </Styled.FirstWrapper>
-      <Styled.SecondWrapper ref={ScrollToFocus}>
+      <Styled.SecondWrapper ref={ref}>
         <Styled.TitleText>ABOUT ME</Styled.TitleText>
         <Styled.InfoBox>
           <Styled.TextBox>
@@ -31,7 +30,9 @@ const Main = () => {
             </Styled.Text1>
           </Styled.TextBox>
           <Styled.TextBox>
-            <Styled.Image src={`${process.env.PUBLIC_URL}/assets/calendar.png`} />
+            <Styled.Image
+              src={`${process.env.PUBLIC_URL}/assets/calendar.png`}
+            />
             <Styled.Text1>
               생년월일
               <br />
@@ -64,13 +65,19 @@ const Main = () => {
           </Styled.TextBox>
         </Styled.InfoBox>
       </Styled.SecondWrapper>
-      <Styled.ThirdWrapper ref={ScrollToFocus}>
+      <Styled.ThirdWrapper>
         <Styled.CTitleText>Channel</Styled.CTitleText>
         <Styled.WrapperChannel>
           <Styled.ChannelBox>
             <Styled.SkillWrapperBox>
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/githublogo.png`} />
-              <Styled.LinkText onClick={() => OpenLink("https://github.com/bamiya/")}>https://github.com/bamiya/</Styled.LinkText>
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/githublogo.png`}
+              />
+              <Styled.LinkText
+                onClick={() => OpenLink("https://github.com/bamiya/")}
+              >
+                https://github.com/bamiya/
+              </Styled.LinkText>
               <Styled.ChannelText>
                 팀 프로젝트 버전관리 및 협업
                 <br />
@@ -82,8 +89,14 @@ const Main = () => {
           </Styled.ChannelBox>
           <Styled.ChannelBox>
             <Styled.SkillWrapperBox>
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/veloglogo.png`} />
-              <Styled.LinkText onClick={() => OpenLink("https://velog.io/@bamiya/")}>https://velog.io/@bamiya/</Styled.LinkText>
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/veloglogo.png`}
+              />
+              <Styled.LinkText
+                onClick={() => OpenLink("https://velog.io/@bamiya/")}
+              >
+                https://velog.io/@bamiya/
+              </Styled.LinkText>
               <Styled.ChannelText>
                 공부중에 헷갈리는 부분 기록
                 <br />
@@ -95,49 +108,67 @@ const Main = () => {
           </Styled.ChannelBox>
         </Styled.WrapperChannel>
       </Styled.ThirdWrapper>
-      <Styled.FourthWrapper ref={ScrollToFocus}>
+      <Styled.FourthWrapper>
         <Styled.TitleText>Skills</Styled.TitleText>
         <Styled.WrapperSkills>
           <Styled.SkillBox>
             <Styled.SkillWrapperBox>
               <Styled.SkillName>Backend</Styled.SkillName>
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/javalogo.png`} />
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/springbootlogo.png`} />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/javalogo.png`}
+              />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/springbootlogo.png`}
+              />
             </Styled.SkillWrapperBox>
           </Styled.SkillBox>
           <Styled.SkillBox>
             <Styled.SkillWrapperBox>
               <Styled.SkillName>Frontend</Styled.SkillName>
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/hcjlogo.png`} />
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/reactlogo.png`} />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/hcjlogo.png`}
+              />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/reactlogo.png`}
+              />
             </Styled.SkillWrapperBox>
           </Styled.SkillBox>
           <Styled.SkillBox>
             <Styled.SkillWrapperBox>
               <Styled.SkillName>Version Control</Styled.SkillName>
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/gitlogo.png`} />
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/githublogo.png`} />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/gitlogo.png`}
+              />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/githublogo.png`}
+              />
             </Styled.SkillWrapperBox>
           </Styled.SkillBox>
           <Styled.SkillBox>
             <Styled.SkillWrapperBox>
               <Styled.SkillName>Communication</Styled.SkillName>
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/figmalogo.png`} />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/figmalogo.png`}
+              />
             </Styled.SkillWrapperBox>
           </Styled.SkillBox>
           <Styled.SkillBox>
             <Styled.SkillWrapperBox>
               <Styled.SkillName>Certificate</Styled.SkillName>
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/qnetlogo.png`} />
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/certi.png`} />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/qnetlogo.png`}
+              />
+              <Styled.LogoImage
+                src={`${process.env.PUBLIC_URL}/assets/certi.png`}
+              />
             </Styled.SkillWrapperBox>
           </Styled.SkillBox>
         </Styled.WrapperSkills>
       </Styled.FourthWrapper>
-      <Styled.FifthWrapper ref={ScrollToFocus}>
+      <Styled.FifthWrapper>
         <Styled.TitleText>Projects</Styled.TitleText>
       </Styled.FifthWrapper>
     </>
   );
-};
+});
 export default Main;
