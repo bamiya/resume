@@ -73,7 +73,7 @@ export const ThirdWrapper = styled.div`
   display: grid;
   align-items: center;
   justify-content: center;
-  height: 600px;
+  height: 800px;
   width: 100%;
   background-color: rgb(39 39 39);
 `;
@@ -92,7 +92,7 @@ export const WrapperChannel = styled.div`
 `;
 
 export const ChannelBox = styled.div`
-  width: auto;
+  width: 500px;
   height: auto;
   background: white;
   margin: 20px auto;
@@ -101,6 +101,21 @@ export const ChannelBox = styled.div`
   &:hover {
     transform: translateY(15px);
   } //hover는 마우스를 올렸을때 반응하게하는 css 요소
+`;
+
+export const LinkText = styled.div`
+  cursor: pointer;
+  font-size: 15px;
+  padding-bottom: 15px;
+  color: rgb(6 69 173);
+  &:hover {
+    text-decoration: underline rgb(6 69 173);
+  }
+`;
+
+export const ChannelText = styled.div`
+  font-size: 16px;
+  line-height: 25px;
 `;
 
 export const FourthWrapper = styled.div`

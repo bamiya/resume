@@ -1,6 +1,11 @@
+import { useRef } from "react";
 import * as Styled from "./styled";
 
 const Main = () => {
+  const OpenLink = (link) => {
+    window.open(link, "_black", "noopener, noreferrer"); //noopener,noreferrer는 보안 취약점 개선
+  };
+  const ScrollToFocus = useRef();
   return (
     <>
       <Styled.FirstWrapper>
@@ -14,7 +19,7 @@ const Main = () => {
           새로운 스택을 배워 직접 적용해 보는것이 취미 입니다.
         </Styled.Intro>
       </Styled.FirstWrapper>
-      <Styled.SecondWrapper>
+      <Styled.SecondWrapper ref={ScrollToFocus}>
         <Styled.TitleText>ABOUT ME</Styled.TitleText>
         <Styled.InfoBox>
           <Styled.TextBox>
@@ -59,18 +64,38 @@ const Main = () => {
           </Styled.TextBox>
         </Styled.InfoBox>
       </Styled.SecondWrapper>
-      <Styled.ThirdWrapper>
+      <Styled.ThirdWrapper ref={ScrollToFocus}>
         <Styled.CTitleText>Channel</Styled.CTitleText>
         <Styled.WrapperChannel>
           <Styled.ChannelBox>
-            <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/githublogo.png`} />
+            <Styled.SkillWrapperBox>
+              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/githublogo.png`} />
+              <Styled.LinkText onClick={() => OpenLink("https://github.com/bamiya/")}>https://github.com/bamiya/</Styled.LinkText>
+              <Styled.ChannelText>
+                팀 프로젝트 버전관리 및 협업
+                <br />
+                개인 프로젝트 소스코드
+                <br />
+                K-DIGITAL-TRAINING 과제 소스코드
+              </Styled.ChannelText>
+            </Styled.SkillWrapperBox>
           </Styled.ChannelBox>
           <Styled.ChannelBox>
-            <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/veloglogo.png`} />
+            <Styled.SkillWrapperBox>
+              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/veloglogo.png`} />
+              <Styled.LinkText onClick={() => OpenLink("https://velog.io/@bamiya/")}>https://velog.io/@bamiya/</Styled.LinkText>
+              <Styled.ChannelText>
+                공부중에 헷갈리는 부분 기록
+                <br />
+                언어, 웹 지식등 정리 후 기록
+                <br />
+                복습할 때 메모장 대신 사용
+              </Styled.ChannelText>
+            </Styled.SkillWrapperBox>
           </Styled.ChannelBox>
         </Styled.WrapperChannel>
       </Styled.ThirdWrapper>
-      <Styled.FourthWrapper>
+      <Styled.FourthWrapper ref={ScrollToFocus}>
         <Styled.TitleText>Skills</Styled.TitleText>
         <Styled.WrapperSkills>
           <Styled.SkillBox>
@@ -109,7 +134,7 @@ const Main = () => {
           </Styled.SkillBox>
         </Styled.WrapperSkills>
       </Styled.FourthWrapper>
-      <Styled.FifthWrapper>
+      <Styled.FifthWrapper ref={ScrollToFocus}>
         <Styled.TitleText>Projects</Styled.TitleText>
       </Styled.FifthWrapper>
     </>
