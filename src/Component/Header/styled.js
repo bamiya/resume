@@ -34,6 +34,12 @@ export const Wrapper = styled.div`
 export const Menu = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
+`;
+
+export const WrapperMenu = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 export const Title = styled.div`
@@ -43,11 +49,18 @@ export const Title = styled.div`
   font-weight: bold;
   margin-left: 10vw;
   margin-right: 40vw;
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    margin-right: 8vw;
+  }
 `;
 
 export const Text = styled.div`
   cursor: pointer;
   color: black;
   font-size: 20px;
+  @media screen and (max-width: 767px) {
+    font-size: 15px;
+  }
   margin-left: 3vw;
 `;

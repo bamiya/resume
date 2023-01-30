@@ -11,15 +11,18 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener("scroll", updateScroll);
   });
+
   return (
     <Styled.Wrapper scroll={scrollPosition > 100 ? true : false}>
       {/* 스크롤이 100px 초과일때 true, 100 이하면 false */}
       <Styled.Menu>
         <Styled.Title>JD's Portfolio</Styled.Title>
-        <Styled.Text>About me</Styled.Text>
-        <Styled.Text>Channel</Styled.Text>
-        <Styled.Text>Skills</Styled.Text>
-        <Styled.Text>Projects</Styled.Text>
+        <Styled.WrapperMenu>
+          <Styled.Text>About me</Styled.Text>
+          <Styled.Text>Channel</Styled.Text>
+          <Styled.Text>Skills</Styled.Text>
+          <Styled.Text>Projects</Styled.Text>
+        </Styled.WrapperMenu>
       </Styled.Menu>
     </Styled.Wrapper>
   );

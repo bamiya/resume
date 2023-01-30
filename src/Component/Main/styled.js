@@ -17,6 +17,9 @@ export const FirstWrapper = styled.div`
 export const TitleText = styled.div`
   color: black;
   font-size: 60px;
+  @media screen and (max-width: 767px) {
+    font-size: 50px;
+  }
   font-weight: bold;
   text-align: center; //텍스트 정렬할때 사용
   margin: 25px;
@@ -102,6 +105,9 @@ export const WrapperChannel = styled.div`
 export const CTitleText = styled.div`
   color: white;
   font-size: 60px;
+  @media screen and (max-width: 767px) {
+    font-size: 50px;
+  }
   font-weight: bold;
   text-align: center; //텍스트 정렬할때 사용
   margin: 25px;
