@@ -7,6 +7,9 @@ export const Wrapper = styled.div`
   align-items: center; // 수직(위아래)정렬에서 가운데 정렬, 반대로 justify-content: center; 는 수평정렬
   height: 80px;
   width: 100%;
+  @media screen and (max-width: 767px) {
+    width: 500px;
+  }
   z-index: 3;
 
   /* 색상 */
