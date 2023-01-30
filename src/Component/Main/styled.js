@@ -23,6 +23,7 @@ export const TitleText = styled.div`
   font-weight: bold;
   text-align: center; //텍스트 정렬할때 사용
   margin: 25px;
+  padding-top: 50px;
 `;
 
 export const Intro = styled.div`
@@ -111,6 +112,7 @@ export const CTitleText = styled.div`
   font-weight: bold;
   text-align: center; //텍스트 정렬할때 사용
   margin: 25px;
+  padding-top: 50px;
 `;
 
 export const ChannelBox = styled.div`
