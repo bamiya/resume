@@ -281,8 +281,8 @@ export const WrapperPInside = styled.div`
 export const ProjectImg = styled.img`
   width: 640px;
   @media screen and (max-width: 1023px) {
-    width: 400px;
-    height: 240px;
+    width: 300px;
+    height: 220px;
   }
   height: 380px;
   margin: 50px;
@@ -292,7 +292,7 @@ export const PTextBox = styled.div`
   width: 640px;
   margin: 50px;
   @media screen and (max-width: 1023px) {
-    width: 400px;
+    width: 300px;
   }
 `;
 export const ProjectText = styled.div`
