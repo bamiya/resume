@@ -1,11 +1,9 @@
-import { useRef } from "react";
 import * as Styled from "./styled";
 
 const Main = () => {
   const OpenLink = (link) => {
     window.open(link, "_black", "noopener, noreferrer"); //noopener,noreferrer는 보안 취약점 개선
   };
-  const ScrollToFocus = useRef();
   return (
     <>
       <Styled.FirstWrapper>
@@ -19,7 +17,7 @@ const Main = () => {
           새로운 스택을 배워 직접 적용해 보는것이 취미 입니다.
         </Styled.Intro>
       </Styled.FirstWrapper>
-      <Styled.SecondWrapper ref={ScrollToFocus}>
+      <Styled.SecondWrapper id="1">
         <Styled.TitleText>ABOUT ME</Styled.TitleText>
         <Styled.InfoBox>
           <Styled.TextBox>
@@ -64,7 +62,7 @@ const Main = () => {
           </Styled.TextBox>
         </Styled.InfoBox>
       </Styled.SecondWrapper>
-      <Styled.ThirdWrapper ref={ScrollToFocus}>
+      <Styled.ThirdWrapper id="2">
         <Styled.CTitleText>Channel</Styled.CTitleText>
         <Styled.WrapperChannel>
           <Styled.ChannelBox>
@@ -95,7 +93,7 @@ const Main = () => {
           </Styled.ChannelBox>
         </Styled.WrapperChannel>
       </Styled.ThirdWrapper>
-      <Styled.FourthWrapper ref={ScrollToFocus}>
+      <Styled.FourthWrapper id="3">
         <Styled.TitleText>Skills</Styled.TitleText>
         <Styled.WrapperSkills>
           <Styled.SkillBox>
@@ -134,7 +132,7 @@ const Main = () => {
           </Styled.SkillBox>
         </Styled.WrapperSkills>
       </Styled.FourthWrapper>
-      <Styled.FifthWrapper ref={ScrollToFocus}>
+      <Styled.FifthWrapper id="4">
         <Styled.TitleText>Projects</Styled.TitleText>
         <Styled.WrapperProject>
           <Styled.ProjectBox>
