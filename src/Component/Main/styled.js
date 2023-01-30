@@ -308,6 +308,9 @@ export const LinkText2 = styled.div`
   cursor: pointer;
   display: inline;
   font-size: 22px;
+  @media screen and (max-width: 1023px) {
+    font-size: 11px;
+  }
   padding-bottom: 15px;
   color: rgb(6 69 173);
   &:hover {
