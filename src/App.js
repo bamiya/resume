@@ -1,15 +1,8 @@
 import Main from "./Component/Main";
 import Header from "./Component/Header";
 import Footer from "./Component/Footer";
-import { useMediaQuery } from "react-responsive";
 
 function App() {
-  const isPc = useMediaQuery({
-    query: "(min-width:1024px)",
-  });
-  const isMobile = useMediaQuery({
-    query: "(max-width:767px)",
-  });
   return (
     <div className="App">
       <Header />

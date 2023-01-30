@@ -257,6 +257,10 @@ export const ProjectImg = styled.img`
   margin: 50px;
 `;
 
+export const PTextBox = styled.div`
+  width: 640px;
+  margin: 50px;
+`;
 export const ProjectText = styled.div`
   display: inline;
   font-size: 22px;
