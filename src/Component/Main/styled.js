@@ -48,6 +48,12 @@ export const InfoBox = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   margin: 10vh 0;
+  @media screen and (max-width: 1023px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const TextBox = styled.div`
@@ -81,17 +87,24 @@ export const ThirdWrapper = styled.div`
   flex-wrap: wrap;
 `;
 
+export const WrapperChannel = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 30px;
+  @media screen and (max-width: 1023px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
 export const CTitleText = styled.div`
   color: white;
   font-size: 60px;
   font-weight: bold;
   text-align: center; //텍스트 정렬할때 사용
   margin: 25px;
-`;
-export const WrapperChannel = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px 30px;
 `;
 
 export const ChannelBox = styled.div`
@@ -139,6 +152,12 @@ export const WrapperSkills = styled.div`
   grid-template-rows: 1fr 1fr;
   gap: 10px 30px;
   margin: 10vh 0;
+  @media screen and (max-width: 1023px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
 `;
 //안에 내용물에 따라 크기 자동조절할려면 height auto로 주고 overflow hidden으로 주면됨
 export const SkillBox = styled.div`
@@ -194,6 +213,16 @@ export const WrapperProject = styled.div`
   margin: 15vh 0;
 `;
 
+export const ProjectBox = styled.div`
+  display: grid;
+  width: auto;
+  height: auto;
+  background: white;
+  margin: 50px auto;
+  border-radius: 20px;
+  padding: 10px 0;
+`;
+
 export const PTitle = styled.div`
   font-size: 40px;
   font-weight: bold;
@@ -214,23 +243,18 @@ export const PdateText = styled.div`
 export const WrapperPInside = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-`;
-
-export const ProjectBox = styled.div`
-  display: grid;
-  width: 1500px;
-  height: auto;
-  background: white;
-  margin: 50px auto;
-  border-radius: 20px;
-  padding: 10px 0;
+  @media screen and (max-width: 1023px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ProjectImg = styled.img`
   width: 640px;
   height: 380px;
-  padding-left: 50px;
-  margin-top: 50px;
+  margin: 50px;
 `;
 
 export const ProjectText = styled.div`
