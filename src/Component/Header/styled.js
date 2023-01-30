@@ -5,11 +5,8 @@ export const Wrapper = styled.div`
   display: flex; //가로방향 정렬
   position: fixed;
   align-items: center; // 수직(위아래)정렬에서 가운데 정렬, 반대로 justify-content: center; 는 수평정렬
-  height: 60px;
+  height: 80px;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px; //왼쪽 여백주기
   z-index: 3;
 
   /* 색상 */
@@ -34,19 +31,23 @@ export const Wrapper = styled.div`
   color: black;
 `;
 
+export const Menu = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 export const Title = styled.div`
   cursor: pointer;
   color: black;
   font-size: 30px;
   font-weight: bold;
-  padding-left: 100px;
-  padding-right: 1000px;
+  margin-left: 10vw;
+  margin-right: 40vw;
 `;
 
 export const Text = styled.div`
   cursor: pointer;
   color: black;
   font-size: 20px;
-  padding-left: 25px;
-  padding-right: 25px;
+  margin-left: 3vw;
 `;

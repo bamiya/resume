@@ -6,7 +6,7 @@ export const FirstWrapper = styled.div`
   flex-direction: column; //컨테이너 안의 div들을 열(column)로 배치
   align-items: center; // 수직(위아래)정렬에서 가운데 정렬, 반대로 justify-content: center; 는 수평정렬
   justify-content: center;
-  height: 650px;
+  height: 65vh;
   width: 100%;
   /* 색상 */
   background-color: rgb(255 192 70);
@@ -35,17 +35,19 @@ export const SecondWrapper = styled.div`
   display: grid;
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: auto;
   width: 100%;
   padding-bottom: 50px;
   /* 색상 */
   background: white;
+  flex-wrap: wrap;
 `;
 
 export const InfoBox = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
+  margin: 10vh 0;
 `;
 
 export const TextBox = styled.div`
@@ -73,9 +75,10 @@ export const ThirdWrapper = styled.div`
   display: grid;
   align-items: center;
   justify-content: center;
-  height: 800px;
+  height: auto;
   width: 100%;
   background-color: rgb(39 39 39);
+  flex-wrap: wrap;
 `;
 
 export const CTitleText = styled.div`
@@ -98,6 +101,7 @@ export const ChannelBox = styled.div`
   margin: 20px auto;
   border-radius: 20px;
   padding: 10px 0;
+  margin: 15vh 0;
   &:hover {
     transform: translateY(15px);
   } //hover는 마우스를 올렸을때 반응하게하는 css 요소
@@ -123,9 +127,10 @@ export const FourthWrapper = styled.div`
   display: grid;
   align-items: center;
   justify-content: center;
-  height: 1400px;
+  height: auto;
   width: 100%;
   background-color: rgb(153 200 255);
+  flex-wrap: wrap;
 `;
 
 export const WrapperSkills = styled.div`
@@ -133,11 +138,13 @@ export const WrapperSkills = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 10px 30px;
+  margin: 10vh 0;
 `;
 //안에 내용물에 따라 크기 자동조절할려면 height auto로 주고 overflow hidden으로 주면됨
 export const SkillBox = styled.div`
   width: 300px;
   height: auto;
+  overflow: hidden;
   background: white;
   margin: 20px auto;
   border-radius: 20px;
@@ -179,6 +186,12 @@ export const FifthWrapper = styled.div`
   height: auto;
   width: 100%;
   background-color: rgb(250, 238, 255);
+  flex-wrap: wrap;
+`;
+
+export const WrapperProject = styled.div`
+  display: grid;
+  margin: 15vh 0;
 `;
 
 export const PTitle = styled.div`
@@ -198,10 +211,6 @@ export const PdateText = styled.div`
   padding-top: 10px;
 `;
 
-export const WrapperProject = styled.div`
-  display: grid;
-`;
-
 export const WrapperPInside = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -212,14 +221,14 @@ export const ProjectBox = styled.div`
   width: 1500px;
   height: auto;
   background: white;
-  margin: 20px auto;
+  margin: 50px auto;
   border-radius: 20px;
   padding: 10px 0;
 `;
 
 export const ProjectImg = styled.img`
-  width: 500px;
-  height: 300px;
+  width: 640px;
+  height: 380px;
   padding-left: 50px;
   margin-top: 50px;
 `;
