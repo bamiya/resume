@@ -109,6 +109,9 @@ export const CTitleText = styled.div`
 
 export const ChannelBox = styled.div`
   width: 500px;
+  @media screen and (max-width: 767px) {
+    width: 300px;
+  }
   height: auto;
   background: white;
   margin: 20px auto;
@@ -211,11 +214,17 @@ export const FifthWrapper = styled.div`
 export const WrapperProject = styled.div`
   display: grid;
   margin: 15vh 0;
+  @media screen and (max-width: 767px) {
+    width: 500px;
+  }
 `;
 
 export const ProjectBox = styled.div`
   display: grid;
   width: auto;
+  @media screen and (max-width: 767px) {
+    width: 500px;
+  }
   height: auto;
   background: white;
   margin: 50px auto;
@@ -248,17 +257,25 @@ export const WrapperPInside = styled.div`
   }
   @media screen and (max-width: 767px) {
     grid-template-columns: 1fr;
+    width: 400px;
   }
 `;
 
 export const ProjectImg = styled.img`
   width: 640px;
+  @media screen and (max-width: 767px) {
+    width: 400px;
+    height: 240px;
+  }
   height: 380px;
   margin: 50px;
 `;
 
 export const PTextBox = styled.div`
   width: 640px;
+  @media screen and (max-width: 767px) {
+    width: 400px;
+  }
   margin: 50px;
 `;
 export const ProjectText = styled.div`
