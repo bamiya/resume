@@ -53,14 +53,21 @@ export const Title = styled.div`
     font-size: 24px;
     margin-right: 8vw;
   }
+  @media screen and (max-width: 500px) {
+    font-size: 12px;
+    margin-right: 4vw;
+  }
 `;
 
 export const Text = styled.div`
   cursor: pointer;
   color: black;
   font-size: 20px;
+  margin-left: 3vw;
   @media screen and (max-width: 767px) {
     font-size: 15px;
   }
-  margin-left: 3vw;
+  @media screen and (max-width: 500px) {
+    font-size: 10x;
+  }
 `;

@@ -8,16 +8,17 @@ export const FirstWrapper = styled.div`
   justify-content: center;
   height: 65vh;
   width: 100%;
+  @media screen and (max-width: 1023px) {
+    width: 100%;
+  }
   /* 색상 */
   background-color: rgb(255 192 70);
-  background-image: url("/assets/bgimage.jpg");
-  background-size: 100% 100%;
 `;
 
 export const TitleText = styled.div`
   color: black;
   font-size: 60px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1023px) {
     font-size: 50px;
   }
   font-weight: bold;
@@ -106,7 +107,7 @@ export const WrapperChannel = styled.div`
 export const CTitleText = styled.div`
   color: white;
   font-size: 60px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1023px) {
     font-size: 50px;
   }
   font-weight: bold;
@@ -117,7 +118,7 @@ export const CTitleText = styled.div`
 
 export const ChannelBox = styled.div`
   width: 500px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1023px) {
     width: 300px;
   }
   height: auto;
@@ -222,7 +223,7 @@ export const FifthWrapper = styled.div`
 export const WrapperProject = styled.div`
   display: grid;
   margin: 15vh 0;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1023px) {
     width: 500px;
   }
 `;
@@ -230,7 +231,7 @@ export const WrapperProject = styled.div`
 export const ProjectBox = styled.div`
   display: grid;
   width: auto;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1023px) {
     width: 500px;
   }
   height: auto;
@@ -247,6 +248,9 @@ export const PTitle = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+  @media screen and (max-width: 1023px) {
+    font-size: 20px;
+  }
 `;
 
 export const PdateText = styled.div`
@@ -261,7 +265,7 @@ export const WrapperPInside = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   @media screen and (max-width: 1023px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   @media screen and (max-width: 767px) {
     grid-template-columns: 1fr;
@@ -271,7 +275,7 @@ export const WrapperPInside = styled.div`
 
 export const ProjectImg = styled.img`
   width: 640px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1023px) {
     width: 400px;
     height: 240px;
   }
@@ -281,7 +285,7 @@ export const ProjectImg = styled.img`
 
 export const PTextBox = styled.div`
   width: 640px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1023px) {
     width: 400px;
   }
   margin: 50px;
