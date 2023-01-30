@@ -19,7 +19,10 @@ export const TitleText = styled.div`
   color: black;
   font-size: 60px;
   @media screen and (max-width: 1023px) {
-    font-size: 50px;
+    font-size: 40px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
   }
   font-weight: bold;
   text-align: center; //텍스트 정렬할때 사용
@@ -30,6 +33,12 @@ export const TitleText = styled.div`
 export const Intro = styled.div`
   color: white;
   font-size: 20px;
+  @media screen and (max-width: 1023px) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 10px;
+  }
   text-align: center;
   padding-top: 20px;
   line-height: 200%;
@@ -108,7 +117,7 @@ export const CTitleText = styled.div`
   color: white;
   font-size: 60px;
   @media screen and (max-width: 1023px) {
-    font-size: 50px;
+    font-size: 40px;
   }
   font-weight: bold;
   text-align: center; //텍스트 정렬할때 사용
@@ -231,9 +240,6 @@ export const WrapperProject = styled.div`
 export const ProjectBox = styled.div`
   display: grid;
   width: auto;
-  @media screen and (max-width: 1023px) {
-    width: 500px;
-  }
   height: auto;
   background: white;
   margin: 50px auto;
@@ -269,7 +275,6 @@ export const WrapperPInside = styled.div`
   }
   @media screen and (max-width: 767px) {
     grid-template-columns: 1fr;
-    width: 400px;
   }
 `;
 
@@ -285,15 +290,18 @@ export const ProjectImg = styled.img`
 
 export const PTextBox = styled.div`
   width: 640px;
+  margin: 50px;
   @media screen and (max-width: 1023px) {
     width: 400px;
   }
-  margin: 50px;
 `;
 export const ProjectText = styled.div`
   display: inline;
   font-size: 22px;
   margin-top: 50px;
+  @media screen and (max-width: 1023px) {
+    font-size: 11px;
+  }
 `;
 
 export const LinkText2 = styled.div`
