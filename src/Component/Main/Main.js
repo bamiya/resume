@@ -49,7 +49,7 @@ const Main = () => {
             <Styled.Text1>
               주소
               <br />
-              창원시
+              서울시
             </Styled.Text1>
           </Styled.TextBox>
           <Styled.TextBox>
