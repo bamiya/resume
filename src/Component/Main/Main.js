@@ -247,6 +247,8 @@ const Main = () => {
                   GitHub :
                   <Styled.LinkText2 onClick={() => OpenLink("https://github.com/Bamiya/jsp_board/")}>https://github.com/Bamiya/jsp_board/</Styled.LinkText2>
                   <br />
+                  Youtube :<Styled.LinkText2 onClick={() => OpenLink("https://youtu.be/DNV2qZ3H8Bk/")}>https://youtu.be/DNV2qZ3H8Bk/</Styled.LinkText2>
+                  <br />
                   Skills : Java JSP
                   <br />
                   Database : Oracle Database
@@ -276,6 +278,8 @@ const Main = () => {
                   <Styled.LinkText2 onClick={() => OpenLink("https://github.com/Bamiya/py_photoshop/")}>
                     https://github.com/Bamiya/py_photoshop/
                   </Styled.LinkText2>
+                  <br />
+                  Youtube :<Styled.LinkText2 onClick={() => OpenLink("https://youtu.be/ykxWO5GwNbw/")}>https://youtu.be/ykxWO5GwNbw/</Styled.LinkText2>
                   <br />
                   Skills : Python
                 </Styled.ProjectText>
