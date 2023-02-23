@@ -184,6 +184,8 @@ const Main = () => {
                     https://github.com/Bamiya/travel-planner/
                   </Styled.LinkText2>
                   <br />
+                  Youtube :<Styled.LinkText2 onClick={() => OpenLink("https://youtu.be/OLmAVYAk_rE/")}>https://youtu.be/OLmAVYAk_rE/</Styled.LinkText2>
+                  <br />
                   Frontend : JS, React <br />
                   Backend : Java, Spring Boot <br />
                   Database : MariaDB
