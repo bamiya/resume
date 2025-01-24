@@ -12,7 +12,7 @@ export const FirstWrapper = styled.div`
     width: 100%;
   }
   /* 색상 */
-  background-color: rgb(255 192 70);
+  background-color: rgb(254 255 225);
 `;
 
 export const TitleText = styled.div`
@@ -31,7 +31,6 @@ export const TitleText = styled.div`
 `;
 
 export const Intro = styled.div`
-  color: white;
   font-size: 20px;
   @media screen and (max-width: 1023px) {
     font-size: 15px;
@@ -219,7 +218,26 @@ export const LogoImage = styled.img`
   width: 100%;
 `;
 
+
 export const FifthWrapper = styled.div`
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  background-color: rgb(245, 255, 249);
+  flex-wrap: wrap;
+`;
+
+export const WrapperCareer = styled.div`
+  display: grid;
+  margin: 15vh 0;
+  @media screen and (max-width: 1023px) {
+    width: 500px;
+  }
+`;
+
+export const SixthWrapper = styled.div`
   display: grid;
   align-items: center;
   justify-content: center;
