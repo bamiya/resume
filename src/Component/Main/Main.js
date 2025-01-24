@@ -49,7 +49,7 @@ const Main = () => {
             <Styled.Text1>
               주소
               <br />
-              서울시
+              서울시 관악구
             </Styled.Text1>
           </Styled.TextBox>
           <Styled.TextBox>
@@ -108,6 +108,7 @@ const Main = () => {
               <Styled.SkillName>Frontend</Styled.SkillName>
               <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/hcjlogo.png`} />
               <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/reactlogo.png`} />
+              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/jquerylogo.png`} />
             </Styled.SkillWrapperBox>
           </Styled.SkillBox>
           <Styled.SkillBox>
@@ -115,6 +116,7 @@ const Main = () => {
               <Styled.SkillName>Version Control</Styled.SkillName>
               <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/gitlogo.png`} />
               <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/githublogo.png`} />
+              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/svnlogo.png`} />
             </Styled.SkillWrapperBox>
           </Styled.SkillBox>
           <Styled.SkillBox>
@@ -125,14 +127,21 @@ const Main = () => {
           </Styled.SkillBox>
           <Styled.SkillBox>
             <Styled.SkillWrapperBox>
-              <Styled.SkillName>Certificate</Styled.SkillName>
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/qnetlogo.png`} />
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/certi.png`} />
+              <Styled.SkillName>DBMS</Styled.SkillName>
+              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/mssqllogo.png`} />
+              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/db2logo.png`} />
+              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/mariadblogo.png`} />
             </Styled.SkillWrapperBox>
           </Styled.SkillBox>
         </Styled.WrapperSkills>
       </Styled.FourthWrapper>
-      <Styled.FifthWrapper id="4">
+      <Styled.FifthWrapper>
+        <Styled.TitleText>Career</Styled.TitleText>
+        <Styled.WrapperCareer>
+          1
+        </Styled.WrapperCareer>
+      </Styled.FifthWrapper>
+      <Styled.SixthWrapper id="4">
         <Styled.TitleText>Projects</Styled.TitleText>
         <Styled.WrapperProject>
           <Styled.ProjectBox>
@@ -287,7 +296,7 @@ const Main = () => {
             </Styled.WrapperPInside>
           </Styled.ProjectBox>
         </Styled.WrapperProject>
-      </Styled.FifthWrapper>
+      </Styled.SixthWrapper>
     </>
   );
 };
