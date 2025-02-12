@@ -33,6 +33,9 @@ const Header = () => {
             <Styled.Text>Skills</Styled.Text>
           </Link>
           <Link to="4" spy={true} smooth={true}>
+            <Styled.Text>Career</Styled.Text>
+          </Link>
+          <Link to="5" spy={true} smooth={true}>
             <Styled.Text>Projects</Styled.Text>
           </Link>
         </Styled.WrapperMenu>
