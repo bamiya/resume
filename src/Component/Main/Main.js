@@ -159,7 +159,7 @@ const Main = () => {
               <div>고객사의 요청에 따른 유지보수 및 관리</div>
               </Styled.CareerInfo>
               <Styled.CareerInfoText>
-              [국립광주과학관] 디지털 스마트시스템 구축 (2023.11)
+              [국립광주과학관] 디지털 스마트시스템 구축 (2023.11 ~ 2023.11)
               </Styled.CareerInfoText>  
               <Styled.CareerInfo>
               <div>미완성 개발건 개발 및 유지보수 진행</div>
@@ -189,7 +189,7 @@ const Main = () => {
               포트폴리오 웹사이트<Styled.PdateText>2023.01 / 개인 프로젝트(1인)</Styled.PdateText>
             </Styled.PTitle>
             <Styled.WrapperPInside>
-              <Styled.ProjectImg src={`${process.env.PUBLIC_URL}/assets/ptp.png`} />
+              <Styled.ProjectImg src={`${process.env.PUBLIC_URL}/assets/ptp1.png`} />
               <Styled.PTextBox>
                 <Styled.ProjectText>
                   포트폴리오 용도로 제작한 웹사이트입니다.
