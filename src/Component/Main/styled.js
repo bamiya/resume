@@ -225,15 +225,94 @@ export const FifthWrapper = styled.div`
   justify-content: center;
   height: auto;
   width: 100%;
-  background-color: rgb(245, 255, 249);
+  background-color: white;
+  // background-color: rgb(222, 222, 255);
   flex-wrap: wrap;
+  margin-bottom: 30px;
 `;
 
 export const WrapperCareer = styled.div`
   display: grid;
-  margin: 15vh 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
   @media screen and (max-width: 1023px) {
-    width: 500px;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+  border-top: 1px solid grey;  /* 위쪽 테두리 */
+  border-bottom: 1px solid grey; /* 아래쪽 테두리 */
+`;
+
+export const CareerBox = styled.div`
+  width: 800px;
+  @media screen and (max-width: 1023px) {
+    width: 400px;
+  }
+  height: auto;
+  margin: 20px auto;
+  padding: 10px 0;
+  margin: 15vh 0;
+`;
+
+export const CareerCom = styled.div`
+  color: black;
+  font-size: 40px;
+  @media screen and (max-width: 1023px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 10px;
+  }
+  text-align: center; //텍스트 정렬할때 사용
+  padding-bottom: 30px;
+`;
+
+export const CareerDate = styled.div`
+  color: black;
+  font-size: 20px;
+  @media screen and (max-width: 1023px) {
+    font-size: 10px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 7px;
+  }
+  text-align: center; //텍스트 정렬할때 사용
+`;
+
+export const CareerInfoText = styled.div`
+  color: grey;
+  font-size: 20px;
+  font-weight: bold;
+  @media screen and (max-width: 1023px) {
+    font-size: 10px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 7px;
+  }
+  text-align: left; //텍스트 정렬할때 사용
+  padding-bottom: 15px;
+`;
+
+export const CareerInfo = styled.div`
+  color: black;
+  font-size: 20px;
+  @media screen and (max-width: 1023px) {
+    font-size: 10px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 7px;
+  }
+  text-align: left; //텍스트 정렬할때 사용
+  padding-bottom: 25px;
+  line-height: 2;
+  margin-left: 30px;
+    div::before {
+    content: "● ";
+    font-weight: bold;
+    margin-right: 8px;
+    color: black;
   }
 `;
 

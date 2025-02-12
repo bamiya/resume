@@ -14,7 +14,7 @@ const Main = () => {
         <Styled.Intro>
           반갑습니다. <br />
           번뜩이는 아이디어로 빠르게 성장하는 개발자 입니다. <br />
-          새로운 스택을 배워 직접 적용해 보는것이 취미 입니다.
+          새로운 기술을 사용해 보는것이 취미 입니다.
         </Styled.Intro>
       </Styled.FirstWrapper>
       <Styled.SecondWrapper id="1">
@@ -135,13 +135,53 @@ const Main = () => {
           </Styled.SkillBox>
         </Styled.WrapperSkills>
       </Styled.FourthWrapper>
-      <Styled.FifthWrapper>
+      <Styled.FifthWrapper id="4">
         <Styled.TitleText>Career</Styled.TitleText>
         <Styled.WrapperCareer>
-          1
+            <Styled.CareerBox>
+              <Styled.CareerCom>
+                나인에스티 
+              </Styled.CareerCom>   
+              <Styled.CareerDate>
+                2023.4.10 ~ 현재                
+              </Styled.CareerDate>         
+            </Styled.CareerBox>
+            <Styled.CareerBox>             
+              <Styled.CareerInfoText>
+              [한전산업개발] 경영정보시스템 고도화 프로젝트 (2023.12 ~ 2025.02)
+              </Styled.CareerInfoText>
+              <Styled.CareerInfo>
+              <div>전자정부 프레임워크, MyBatis, DB2 환경에서의 개발</div>
+              <div>MSSQL -≫ DB2 마이그레이션</div>
+              <div>ERP 인사&급여 파트 200본 이상 개발</div>
+              <div>thymeleaf, sbgrid 등 새로운 환경 적용으로 레거시 코드 수정</div>
+              <div>rexpert4.0 을 활용한 출력물 개발</div>
+              <div>고객사의 요청에 따른 유지보수 및 관리</div>
+              </Styled.CareerInfo>
+              <Styled.CareerInfoText>
+              [국립광주과학관] 디지털 스마트시스템 구축 (2023.11)
+              </Styled.CareerInfoText>  
+              <Styled.CareerInfo>
+              <div>미완성 개발건 개발 및 유지보수 진행</div>
+              </Styled.CareerInfo> 
+              <Styled.CareerInfoText>
+              [유유헬스케어] ERP 시스템 구축 (2023.08 ~ 2023.11)
+              </Styled.CareerInfoText>
+              <Styled.CareerInfo>
+              <div>ERP 물류 파트 개발 및 유지보수</div>
+              </Styled.CareerInfo> 
+              <Styled.CareerInfoText>
+              [이노레스] ERP 시스템 구축 (2023.04 ~ 2023.8)
+              </Styled.CareerInfoText>
+              <Styled.CareerInfo>
+              <div>C# Winform 환경에서의 개발</div>
+              <div>결의전표 프로그램 개발</div>
+              <div>품질관리 프로그램 개발</div>
+              </Styled.CareerInfo>             
+            </Styled.CareerBox>
         </Styled.WrapperCareer>
       </Styled.FifthWrapper>
-      <Styled.SixthWrapper id="4">
+      <Styled.SixthWrapper id="5">
         <Styled.TitleText>Projects</Styled.TitleText>
         <Styled.WrapperProject>
           <Styled.ProjectBox>
