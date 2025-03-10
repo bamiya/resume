@@ -100,14 +100,14 @@ const Main = () => {
             <Styled.SkillWrapperBox>
               <Styled.SkillName>Backend</Styled.SkillName>
               <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/javalogo.png`} />
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/springbootlogo.png`} />
+              {/* <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/springbootlogo.png`} /> */}
             </Styled.SkillWrapperBox>
           </Styled.SkillBox>
           <Styled.SkillBox>
             <Styled.SkillWrapperBox>
               <Styled.SkillName>Frontend</Styled.SkillName>
               <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/hcjlogo.png`} />
-              <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/reactlogo.png`} />
+              {/* <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/reactlogo.png`} /> */}
               <Styled.LogoImage src={`${process.env.PUBLIC_URL}/assets/jquerylogo.png`} />
             </Styled.SkillWrapperBox>
           </Styled.SkillBox>
