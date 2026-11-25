@@ -11,7 +11,6 @@
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/style.css">
-  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -19,12 +18,12 @@
   <div class="hero-inner">
     <p class="eyebrow">ERP ⁠·⁠ 업무시스템 개발자</p>
     <h1>이정도</h1>
-    <p class="lead">
-      ERP 솔루션 회사에서 MES⁠·⁠LIMS⁠·⁠인사⁠·⁠급여 등 업무 시스템을 개발하고 유지보수해 왔습니다.
-      제약사 공장을 직접 방문해 현장 관리자와 공정⁠·⁠업무 방식을 논의하고, 그 내용을 화면과 로직으로 옮기는 일을 주로 합니다.
-      재고⁠·⁠상태값처럼 수치가 틀리면 현장이 흔들리는 로직은 트랜잭션과 상태 변화를 꼼꼼히 점검합니다.
-      C#⁠·⁠Oracle 환경과 Java(전자정부 프레임워크)⁠·⁠DB2 환경을 모두 다뤄 왔습니다.
-    </p>
+    <div class="lead">
+      <p>ERP 솔루션 회사에서 MES⁠·⁠LIMS⁠·⁠인사⁠·⁠급여 시스템을 개발하고 유지보수해 왔습니다.</p>
+      <p>제약 공장을 직접 방문해 현장 관리자와 공정⁠·⁠업무 방식을 논의하고, 화면과 로직으로 옮깁니다.</p>
+      <p>재고⁠·⁠상태값처럼 틀리면 현장이 흔들리는 로직은 트랜잭션과 상태 변화를 꼼꼼히 점검합니다.</p>
+      <p>C#⁠·⁠Oracle 환경과 Java(전자정부 프레임워크)⁠·⁠DB2 환경을 모두 다뤄 왔습니다.</p>
+    </div>
     <div class="hero-actions">
       <a class="btn btn-solid" href="mailto:bamiyamy@gmail.com">bamiyamy@gmail.com</a>
       <span class="meta">경력 3년 8개월</span>
@@ -57,7 +56,7 @@
 
 <main class="page">
 
-  <section class="sec reveal" id="skills" aria-labelledby="h-skills">
+  <section class="sec" id="skills" aria-labelledby="h-skills">
     <h2 id="h-skills"><span class="num">01</span>주력 기술</h2>
     <div class="cards3">
       <div class="card skill">
@@ -78,7 +77,7 @@
     </div>
   </section>
 
-  <section class="sec reveal" id="career" aria-labelledby="h-career">
+  <section class="sec" id="career" aria-labelledby="h-career">
     <h2 id="h-career"><span class="num">02</span>경력</h2>
 
     <div class="company">
@@ -150,7 +149,7 @@
     </div>
   </section>
 
-  <section class="sec reveal" id="project" aria-labelledby="h-project">
+  <section class="sec" id="project" aria-labelledby="h-project">
     <h2 id="h-project"><span class="num">03</span>개인 프로젝트</h2>
     <article class="card project">
       <header class="job-head">
@@ -158,11 +157,12 @@
         <span class="period">2025.06 – 현재</span>
       </header>
       <p class="status">개발 단계 ⁠·⁠ 실고객 운영 전</p>
-      <p>
-        직원 수십 명 규모의 회사가 회계⁠·⁠인사⁠·⁠급여⁠·⁠근태⁠·⁠휴가⁠·⁠구매⁠·⁠재고⁠·⁠판매를 한 프로그램에서 쓰도록 만든 모듈형 ERP입니다.
-        복잡한 회계⁠·⁠인사⁠·⁠급여 절차는 단순한 클릭으로 바꾸고, 뒤에서는 전표 균형⁠·⁠금액 합계⁠·⁠법정 계산이 틀리지 않게 흐르도록 설계했습니다.
-        인사⁠·⁠급여, 물류, 재고, 결의전표를 다뤄 온 현업 경험이 설계 판단의 바탕입니다.
-      </p>
+      <div class="intro">
+        <p>직원 수십 명 규모의 회사가 회계⁠·⁠인사⁠·⁠급여⁠·⁠근태⁠·⁠휴가⁠·⁠구매⁠·⁠재고⁠·⁠판매를 한 프로그램에서 쓰도록 만든 모듈형 ERP입니다.</p>
+        <p>복잡한 회계⁠·⁠인사⁠·⁠급여 절차를 단순한 클릭으로 바꿨습니다.</p>
+        <p>뒤에서는 전표 균형⁠·⁠금액 합계⁠·⁠법정 계산이 틀리지 않게 흐르도록 설계했습니다.</p>
+        <p>인사⁠·⁠급여, 물류, 재고, 결의전표를 다뤄 온 현업 경험이 설계 판단의 바탕입니다.</p>
+      </div>
       <ul class="points">
         <li><b>멀티테넌트 설계</b><span>모든 테이블에 회사 번호와 복합 외래키를 두어 다른 회사 데이터가 섞일 수 없게 하고, 통합 시험으로 검증</span></li>
         <li><b>모듈 독립</b><span>구매⁠·⁠판매⁠·⁠급여가 인터페이스(<code>JournalSource</code>)로만 회계에 전표 후보를 제공해, 모듈을 빼도 나머지가 동작(설치형 빌드 대비)</span></li>
@@ -181,7 +181,7 @@
     </article>
   </section>
 
-  <section class="sec reveal" id="edu" aria-labelledby="h-edu">
+  <section class="sec" id="edu" aria-labelledby="h-edu">
     <h2 id="h-edu"><span class="num">04</span>학력 ⁠·⁠ 교육 ⁠·⁠ 자격</h2>
     <div class="cards2">
       <div class="card">
