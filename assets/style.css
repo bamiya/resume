@@ -145,7 +145,7 @@ h1 { font-size: clamp(40px, 7vw, 60px); line-height: 1.1; letter-spacing: -0.03e
 .shots { margin: 22px 0 8px; }
 .shots-note { font-size: 13.5px; color: var(--muted); margin-bottom: 12px; }
 .shots-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
-@media (min-width: 720px) { .shots-grid { grid-template-columns: 1fr 1fr; } .shots-grid .shot:first-child { grid-column: 1 / -1; } }
+@media (min-width: 720px) { .shots-grid { grid-template-columns: 1fr 1fr; } }
 .shot { margin: 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--card); }
 .shot a { display: block; line-height: 0; cursor: zoom-in; }
 .shot img { width: 100%; height: auto; display: block; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-bottom: 1px solid var(--line); background: var(--surface); }
