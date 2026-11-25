@@ -29,12 +29,18 @@
   if (track && slides.length > 1) {
     box.classList.add('is-enhanced');
 
+    var stage = box.querySelector('.shots-stage');
     var nav = document.createElement('div');
     nav.className = 'shots-nav';
+    // 이미지 양옆 가운데 화살표(이미지 높이 영역 안에서 세로 중앙)
+    var arrows = document.createElement('div');
+    arrows.className = 'shots-arrows';
     var prev = document.createElement('button');
-    prev.type = 'button'; prev.className = 'shots-btn'; prev.textContent = '‹'; prev.setAttribute('aria-label', '이전 화면');
+    prev.type = 'button'; prev.className = 'shots-btn shots-prev'; prev.textContent = '\u2039'; prev.setAttribute('aria-label', '이전 화면');
     var next = document.createElement('button');
-    next.type = 'button'; next.className = 'shots-btn'; next.textContent = '›'; next.setAttribute('aria-label', '다음 화면');
+    next.type = 'button'; next.className = 'shots-btn shots-next'; next.textContent = '\u203A'; next.setAttribute('aria-label', '다음 화면');
+    arrows.appendChild(prev); arrows.appendChild(next);
+    stage.appendChild(arrows);
     var dots = document.createElement('div');
     dots.className = 'shots-dots';
     var count = document.createElement('span');
@@ -49,7 +55,7 @@
       d.addEventListener('click', function () { go(i); });
       dots.appendChild(d); dotEls.push(d);
     });
-    nav.appendChild(prev); nav.appendChild(dots); nav.appendChild(count); nav.appendChild(next);
+    nav.appendChild(dots); nav.appendChild(count);
     box.appendChild(nav);
 
     var current = 0, target = 0, lockUntil = 0;
