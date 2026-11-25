@@ -39,7 +39,8 @@ body {
 p, li, dd { text-wrap: pretty; }
 h1, h2, h3, h4, h5, .strengths p { text-wrap: balance; }
 /* 한 줄 길이를 읽기 좋게(한글 기준 약 40자) 제한 */
-.job li, .project > p, .points li > span, .callout li { max-width: 42em; }
+.intro { margin-bottom: 8px; }
+.intro p { margin: 0 0 6px; }
 a { color: var(--accent); }
 b { font-weight: 650; }
 ul { margin: 0; padding: 0; list-style: none; }
@@ -49,15 +50,16 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fo
 
 /* ---------- Hero ---------- */
 .hero { background: var(--bg); }
-.hero-inner { max-width: 960px; margin: 0 auto; padding: 96px 24px 56px; }
+.hero-inner { max-width: 1040px; margin: 0 auto; padding: 96px 24px 56px; }
 .eyebrow {
   display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 650; color: var(--accent);
   padding: 5px 14px 5px 12px; border-radius: 999px; background: var(--accent-soft);
 }
 .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
 h1 { font-size: clamp(40px, 7vw, 60px); line-height: 1.1; letter-spacing: -0.03em; font-weight: 780; margin: 18px 0 22px; }
-.lead { font-size: 18.5px; line-height: 1.9; max-width: 36em; color: var(--muted); }
+.lead { font-size: 18px; line-height: 1.85; max-width: none; color: var(--muted); }
 .lead { color: color-mix(in srgb, var(--text) 78%, var(--bg)); }
+.lead p { margin: 0 0 6px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 .btn { font: inherit; font-size: 15px; font-weight: 600; padding: 12px 22px; border-radius: 999px; cursor: pointer; text-decoration: none; transition: transform .15s ease, background .15s ease; }
 .btn:hover { transform: translateY(-1px); }
@@ -73,13 +75,13 @@ h1 { font-size: clamp(40px, 7vw, 60px); line-height: 1.1; letter-spacing: -0.03e
 
 /* ---------- Nav ---------- */
 .nav { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
-.nav-inner { max-width: 960px; margin: 0 auto; padding: 0 16px; display: flex; gap: 4px; overflow-x: auto; }
+.nav-inner { max-width: 1040px; margin: 0 auto; padding: 0 16px; display: flex; gap: 4px; overflow-x: auto; }
 .nav a { color: var(--muted); text-decoration: none; font-size: 14.5px; font-weight: 600; padding: 14px 14px; border-bottom: 2px solid transparent; white-space: nowrap; }
 .nav a:hover { color: var(--text); }
 .nav a.active { color: var(--accent); border-bottom-color: var(--accent); }
 
 /* ---------- Layout ---------- */
-.page { max-width: 960px; margin: 0 auto; padding: 24px 24px 64px; }
+.page { max-width: 1040px; margin: 0 auto; padding: 24px 24px 64px; }
 .sec { padding: 40px 0 8px; }
 .sec h2 { display: flex; align-items: baseline; gap: 14px; font-size: 28px; letter-spacing: -0.02em; line-height: 1.3; margin-bottom: 22px; }
 .num { font-size: 14px; font-weight: 750; color: var(--accent); letter-spacing: .06em; font-variant-numeric: tabular-nums; }
@@ -131,7 +133,6 @@ h1 { font-size: clamp(40px, 7vw, 60px); line-height: 1.1; letter-spacing: -0.03e
 .project { position: relative; overflow: hidden; }
 .project::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: var(--accent); }
 .project .status { display: inline-block; margin: 0 0 12px; padding: 2px 12px; font-size: 13px; font-weight: 650; color: var(--accent); background: var(--accent-soft); border-radius: 999px; }
-.project > p { margin-bottom: 8px; }
 .points { margin-top: 12px; display: grid; gap: 4px; }
 .points li { display: grid; grid-template-columns: 1fr; gap: 0; padding: 12px 0; border-top: 1px solid var(--line); }
 .points li > b { color: var(--accent); }
@@ -142,14 +143,8 @@ h1 { font-size: clamp(40px, 7vw, 60px); line-height: 1.1; letter-spacing: -0.03e
 /* ---------- Footer ---------- */
 .foot { padding: 32px 0 0; color: var(--muted); font-size: 13px; }
 
-/* ---------- 스크롤 등장 (JS가 켜져 있을 때만) ---------- */
-.js .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
-.js .reveal.in { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  .js .reveal { opacity: 1; transform: none; transition: none; }
-  .btn { transition: none; }
-}
+/* 스크롤 등장 효과는 쓰지 않는다(내용이 항상 보이도록) */
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
 
 /* ---------- Print: A4, 흰 종이 ---------- */
 @page { size: A4; margin: 14mm 14mm 16mm; }
@@ -172,7 +167,6 @@ h1 { font-size: clamp(40px, 7vw, 60px); line-height: 1.1; letter-spacing: -0.03e
   .strengths p { font-size: 8.5pt; line-height: 1.5; }
   .btn-solid { background: none; border: 0; padding: 0; color: var(--muted); font-size: 9.5pt; font-weight: 400; }
   .page { max-width: none; padding: 0; }
-  .js .reveal { opacity: 1 !important; transform: none !important; }
   .sec { padding: 14pt 0 0; }
   .sec h2 { font-size: 13pt; margin-bottom: 8pt; }
   .card { border: 0; border-radius: 0; box-shadow: none; padding: 0 0 8pt; background: none; }
