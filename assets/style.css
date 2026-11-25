@@ -142,15 +142,27 @@ h1 { font-size: clamp(40px, 7vw, 60px); line-height: 1.1; letter-spacing: -0.03e
 
 
 /* ---------- 프로젝트 화면 갤러리 ---------- */
-.shots { margin: 22px 0 8px; }
+.shots { margin: 28px 0 0; padding-top: 24px; border-top: 1px solid var(--line); }
+.shots-title { font-size: 16px; color: var(--accent); margin-bottom: 4px; }
 .shots-note { font-size: 13.5px; color: var(--muted); margin-bottom: 12px; }
-.shots-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
-@media (min-width: 720px) { .shots-grid { grid-template-columns: 1fr 1fr; } }
-.shot { margin: 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--card); }
+.shots-stage { border: 1px solid var(--line); border-radius: 16px; background: var(--card); overflow: hidden; }
+.shots-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; }
+.shots.is-enhanced .shots-track { scrollbar-width: none; }
+.shots.is-enhanced .shots-track::-webkit-scrollbar { display: none; }
+.shots-track:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.shots-nav { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 12px; }
+.shots-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--card); color: var(--text); font-size: 20px; line-height: 1; cursor: pointer; }
+.shots-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.shots-btn:disabled { opacity: .35; cursor: default; }
+.shots-dots { display: flex; gap: 8px; align-items: center; }
+.shots-dot { width: 9px; height: 9px; padding: 0; border-radius: 50%; border: 0; background: var(--line); cursor: pointer; transition: width .2s, background .2s; }
+.shots-dot[aria-current="true"] { width: 24px; border-radius: 999px; background: var(--accent); }
+.shots-count { min-width: 3.2em; text-align: center; font-size: 13.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.shot { flex: 0 0 100%; margin: 0; scroll-snap-align: start; scroll-snap-stop: always; background: var(--card); }
 .shot a { display: block; line-height: 0; cursor: zoom-in; }
 .shot img { width: 100%; height: auto; display: block; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-bottom: 1px solid var(--line); background: var(--surface); }
-.shot figcaption { padding: 12px 16px 14px; font-size: 14.5px; line-height: 1.65; color: var(--muted); }
-.shot figcaption b { display: block; color: var(--text); font-size: 15px; margin-bottom: 2px; }
+.shot figcaption { padding: 14px 20px 18px; font-size: 15px; line-height: 1.7; color: var(--muted); }
+.shot figcaption b { display: block; color: var(--text); font-size: 16px; margin-bottom: 2px; }
 dialog.lightbox { border: 0; padding: 0; background: transparent; max-width: 96vw; max-height: 96vh; }
 dialog.lightbox::backdrop { background: rgba(8, 12, 24, .82); }
 dialog.lightbox img { display: block; max-width: 96vw; max-height: 92vh; border-radius: 10px; cursor: zoom-out; }
@@ -159,7 +171,7 @@ dialog.lightbox img { display: block; max-width: 96vw; max-height: 92vh; border-
 .foot { padding: 32px 0 0; color: var(--muted); font-size: 13px; }
 
 /* 스크롤 등장 효과는 쓰지 않는다(내용이 항상 보이도록) */
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn, .shots-dot { transition: none; } .shots-track { scroll-behavior: auto; } }
 
 /* ---------- Print: A4, 흰 종이 ---------- */
 @page { size: A4; margin: 14mm 14mm 16mm; }
