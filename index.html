@@ -35,7 +35,7 @@
       </li>
       <li>
         <h2>다양한 환경과 업무</h2>
-        <p>C#·WinForm과 Java·전자정부, Oracle·DB2·MSSQL 환경에서 생산·시험·인사급여·물류·결의전표 시스템을 개발했습니다.</p>
+        <p>C#⁠·⁠WinForm과 Java⁠·⁠전자정부, Oracle⁠·⁠DB2⁠·⁠MSSQL 환경에서 생산⁠·⁠시험⁠·⁠인사급여⁠·⁠물류⁠·⁠결의전표 시스템을 개발했습니다.</p>
       </li>
       <li>
         <h2>AI 활용</h2>
@@ -163,6 +163,49 @@
         <p>뒤에서는 전표 균형⁠·⁠금액 합계⁠·⁠법정 계산이 틀리지 않게 흐르도록 설계했습니다.</p>
         <p>인사⁠·⁠급여, 물류, 재고, 결의전표를 다뤄 온 현업 경험이 설계 판단의 바탕입니다.</p>
       </div>
+
+      <div class="shots">
+        <p class="shots-note">실제 구동 화면입니다. 회사⁠·⁠사원⁠·⁠거래처 정보는 모두 데모 데이터입니다. 이미지를 누르면 크게 볼 수 있습니다.</p>
+        <div class="shots-grid">
+        <figure class="shot">
+          <a href="assets/img/dashboard-ceo.webp" target="_blank" rel="noopener">
+            <img src="assets/img/dashboard-ceo.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="대표 홈 화면: 현금 흐름⁠·⁠보안 점수 같은 위험 신호를 「확인된 사실 ⁠·⁠ 이대로 두면 ⁠·⁠ 지금 할 일」로 정리합니다.">
+          </a>
+          <figcaption><b>대표 홈</b>현금 흐름⁠·⁠보안 점수 같은 위험 신호를 「확인된 사실 ⁠·⁠ 이대로 두면 ⁠·⁠ 지금 할 일」로 정리합니다.</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="assets/img/auto-journal.webp" target="_blank" rel="noopener">
+            <img src="assets/img/auto-journal.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="자동 전표 화면: 구매⁠·⁠판매⁠·⁠급여⁠·⁠수금 등 확정된 데이터를 전표 후보로 모아 한 번의 클릭으로 전표를 만듭니다.">
+          </a>
+          <figcaption><b>자동 전표</b>구매⁠·⁠판매⁠·⁠급여⁠·⁠수금 등 확정된 데이터를 전표 후보로 모아 한 번의 클릭으로 전표를 만듭니다.</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="assets/img/payroll-cost.webp" target="_blank" rel="noopener">
+            <img src="assets/img/payroll-cost.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="인건비 분석 화면: 확정된 급여대장으로 월별⁠·⁠부서별 인건비를 확인합니다.">
+          </a>
+          <figcaption><b>인건비 분석</b>확정된 급여대장으로 월별⁠·⁠부서별 인건비(총지급액 + 회사 부담 4대보험)를 확인합니다.</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="assets/img/sales-shipment.webp" target="_blank" rel="noopener">
+            <img src="assets/img/sales-shipment.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="수주⁠·⁠출하 화면: 출하를 확인하면 재고가 줄고, 회계에는 매출 전표 후보가 전달됩니다.">
+          </a>
+          <figcaption><b>수주⁠·⁠출하</b>출하를 확인하면 재고가 줄고, 회계에는 매출 전표 후보가 전달됩니다.</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="assets/img/tax-invoice-ledger.webp" target="_blank" rel="noopener">
+            <img src="assets/img/tax-invoice-ledger.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="세금계산서 장부 화면: 출하에서 넘어온 미기록 세금계산서를 한 번에 장부에 기록합니다.">
+          </a>
+          <figcaption><b>세금계산서 장부</b>출하에서 넘어온 미기록 세금계산서를 한 번에 장부에 기록합니다.</figcaption>
+        </figure>
+        <figure class="shot">
+          <a href="assets/img/dashboard-staff.webp" target="_blank" rel="noopener">
+            <img src="assets/img/dashboard-staff.webp" width="1600" height="1000" loading="lazy" decoding="async" alt="직원 홈 화면: 출퇴근, 남은 연차, 확인할 공지를 한 화면에서 처리합니다.">
+          </a>
+          <figcaption><b>직원 홈</b>출퇴근, 남은 연차, 확인할 공지를 한 화면에서 처리합니다.</figcaption>
+        </figure>
+        </div>
+      </div>
+
       <ul class="points">
         <li><b>멀티테넌트 설계</b><span>모든 테이블에 회사 번호와 복합 외래키를 두어 다른 회사 데이터가 섞일 수 없게 하고, 통합 시험으로 검증</span></li>
         <li><b>모듈 독립</b><span>구매⁠·⁠판매⁠·⁠급여가 인터페이스(<code>JournalSource</code>)로만 회계에 전표 후보를 제공해, 모듈을 빼도 나머지가 동작(설치형 빌드 대비)</span></li>
