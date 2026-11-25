@@ -140,6 +140,21 @@ h1 { font-size: clamp(40px, 7vw, 60px); line-height: 1.1; letter-spacing: -0.03e
 .callout { border-left: 4px solid var(--accent); background: var(--surface); border-radius: 0 14px 14px 0; padding: 18px 22px; }
 .callout h5 { font-size: 15px; color: var(--accent); margin-bottom: 6px; }
 
+
+/* ---------- 프로젝트 화면 갤러리 ---------- */
+.shots { margin: 22px 0 8px; }
+.shots-note { font-size: 13.5px; color: var(--muted); margin-bottom: 12px; }
+.shots-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 720px) { .shots-grid { grid-template-columns: 1fr 1fr; } .shots-grid .shot:first-child { grid-column: 1 / -1; } }
+.shot { margin: 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--card); }
+.shot a { display: block; line-height: 0; cursor: zoom-in; }
+.shot img { width: 100%; height: auto; display: block; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-bottom: 1px solid var(--line); background: var(--surface); }
+.shot figcaption { padding: 12px 16px 14px; font-size: 14.5px; line-height: 1.65; color: var(--muted); }
+.shot figcaption b { display: block; color: var(--text); font-size: 15px; margin-bottom: 2px; }
+dialog.lightbox { border: 0; padding: 0; background: transparent; max-width: 96vw; max-height: 96vh; }
+dialog.lightbox::backdrop { background: rgba(8, 12, 24, .82); }
+dialog.lightbox img { display: block; max-width: 96vw; max-height: 92vh; border-radius: 10px; cursor: zoom-out; }
+
 /* ---------- Footer ---------- */
 .foot { padding: 32px 0 0; color: var(--muted); font-size: 13px; }
 
@@ -171,6 +186,7 @@ h1 { font-size: clamp(40px, 7vw, 60px); line-height: 1.1; letter-spacing: -0.03e
   .sec h2 { font-size: 13pt; margin-bottom: 8pt; }
   .card { border: 0; border-radius: 0; box-shadow: none; padding: 0 0 8pt; background: none; }
   .project::before { display: none; }
+  .shots { display: none; }
   .cards3 { grid-template-columns: repeat(3, 1fr); gap: 10pt; }
   .ico { display: none; }
   .skill h3 { margin-top: 0; font-size: 10.5pt; }
